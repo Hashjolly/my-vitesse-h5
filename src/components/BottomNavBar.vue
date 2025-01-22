@@ -3,7 +3,7 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <nav text-xl my-4>
+  <nav class="flex flex-justify-around text-xl my-3">
     <RouterLink class="icon-btn mx-2" to="/" :title="t('button.map')">
       <div i-ri-map-2-fill />
       <p>
@@ -25,7 +25,7 @@ const { t } = useI18n()
       </p>
     </a>
 
-    <RouterLink class="icon-btn mx-2" to="/about" :title="t('button.infos')">
+    <RouterLink class="icon-btn mx-2" to="/infos" :title="t('button.infos')">
       <div i-ri-information-line />
       <p>
         {{ t('button.infos') }}
@@ -33,3 +33,14 @@ const { t } = useI18n()
     </RouterLink>
   </nav>
 </template>
+
+<style scoped>
+.icon-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icon-btn div {
+  font-size: 1.5rem;
+}
+</style>
