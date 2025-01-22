@@ -1,0 +1,18 @@
+button:
+  map: Carte
+  list: Liste
+  tickets: Billets
+  infos: Infos
+  about: A propos
+  back: Retour
+  go: GO
+  home: Accueil
+  toggle_dark: Activer le mode sombre
+  toggle_langs: Changer langues
+intro:
+  desc: 📱 A H5 Template(Vite + Vue) inspired by Vitesse.
+  dynamic-route: Demo of dynamic route
+  hi: Hi, {name}!
+  aka: Also known as
+  whats-your-name: What's your name?
+not-found: Not found
