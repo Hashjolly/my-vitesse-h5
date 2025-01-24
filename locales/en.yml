@@ -16,3 +16,6 @@ intro:
   aka: Also known as
   whats-your-name: What's your name?
 not-found: Not found
+errors:
+  location_denied: Please enable location services for a better experience.
+  location_error: An error occurred while retrieving your location.

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import config from '~/config'
-import BottomNavBar from './components/BottomNavBar.vue'
+import SplashScreen from './pages/utils/SplashScreen.vue'
 
 // https://github.com/vueuse/head
 // you can use this to manipulate the document head in any components,
@@ -22,8 +22,22 @@ useHead({
     },
   ],
 })
+
+const isLoading = ref(true)
+
+onMounted(async () => {
+  const poisStore = usePoiStore()
+  await poisStore.fetchPois()
+  setTimeout(() => {
+    isLoading.value = false
+  }, 2000)
+})
 </script>
 
 <template>
-  <RouterView />
+  <SplashScreen
+    v-show="isLoading"
+    class="fullscreen-splash"
+  />
+  <RouterView v-if="!isLoading" />
 </template>

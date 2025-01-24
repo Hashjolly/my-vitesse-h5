@@ -1,13 +1,13 @@
 :root {
-  --h5-c-primary: #00aba9;
+  --h5-c-primary: #dc1b22;
 
-  --h5-c-bg: transparent;
+  --h5-c-bg: #FAFAFA;
   --h5-c-text: #000;
 }
 
 html.dark {
   color-scheme: dark;
 
-  --h5-c-bg: #121212;
+  --h5-c-bg: #1d1d1d;
   --h5-c-text: #fff;
 }

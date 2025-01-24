@@ -13,12 +13,34 @@ body {
   color: var(--h5-c-text);
 }
 
+main .nav {
+  background-color: var(--h5-c-bg);
+  color: var(--h5-c-text);
+}
+
+#map {
+  height: 100%;
+  width: 100vw;
+}
+
 .icon-btn {
-  @apply inline-block cursor-pointer select-none opacity-75 transition duration-200 ease-in-out hover:opacity-100 hover:[color:#dc1b22];
+  @apply inline-block cursor-pointer select-none transition duration-200 ease-in-out hover:opacity-100 hover:[color:var(--h5-c-primary)];
+}
+
+.logo-btn {
+  @apply inline-block cursor-pointer select-none transition duration-200 ease-in-out;
+}
+
+.logo-image {
+  @apply w-20 transition duration-200 ease-in-out hover:transform-scale-y-110 hover:transform-scale-x-110;
 }
 
 .dark {
   .icon-btn {
-    @apply hover:[color:#dc1b22];
+    @apply hover:[color:var(--h5-c-primary)];
   }
+}
+
+.router-link-exact-active {
+  color: var(--h5-c-primary);
 }

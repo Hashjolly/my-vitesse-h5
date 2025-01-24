@@ -16,3 +16,6 @@ intro:
   aka: Also known as
   whats-your-name: What's your name?
 not-found: Page non trouvée
+errors:
+  location_denied: Merci d'activer la géolocalisation pour une meilleure expérience.
+  location_error: Une erreur est survenue lors de la récupération de votre position.

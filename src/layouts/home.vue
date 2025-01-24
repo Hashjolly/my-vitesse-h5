@@ -1,13 +1,11 @@
 <template>
-  <main class="p-4 text-center">
-    <NavMenu />
-    <div class="pb-20">
+  <main class="flex flex-col h-screen text-center">
+    <TopAppBar class="nav z-10 shadow shadow-md shadow-warmgray shadow-op-100" />
+    <div class="flex flex-col flex-grow z-0">
+      <Filters class="py-2" />
       <RouterView />
-      <div class="mt-5 mx-auto text-center opacity-75">
-        [Home Layout]
-      </div>
     </div>
-    <div class="bg-white fixed bottom-0 left-0 w-full border-t-1 border-gray-700 dark:border-gray-200">
+    <div class="nav z-10 relative bottom-0 left-0 w-full border-t-1 border-gray-700 dark:border-gray-200 z-10 bottom-nav-bar-shadow">
       <BottomNavBar />
     </div>
   </main>

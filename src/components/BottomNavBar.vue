@@ -3,7 +3,7 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <nav class="flex flex-justify-around text-xl my-3">
+  <nav class="flex flex-justify-around text-base my-3">
     <RouterLink class="icon-btn mx-2" to="/" :title="t('button.map')">
       <div i-ri-map-2-fill />
       <p>
@@ -41,6 +41,6 @@ const { t } = useI18n()
   align-items: center;
 }
 .icon-btn div {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 </style>

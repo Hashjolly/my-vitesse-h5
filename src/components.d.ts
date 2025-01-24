@@ -8,12 +8,17 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     BottomNavBar: typeof import('./components/BottomNavBar.vue')['default']
+    Carousel: typeof import('./components/Carousel.vue')['default']
     Counter: typeof import('./components/Counter.vue')['default']
+    Filter: typeof import('./components/Filter.vue')['default']
+    Filters: typeof import('./components/Filters.vue')['default']
     Footer: typeof import('./components/Footer.vue')['default']
     Loading: typeof import('./components/Loading.vue')['default']
     NavMenu: typeof import('./components/NavMenu.vue')['default']
     README: typeof import('./components/README.md')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    SplashScreen: typeof import('./components/SplashScreen.vue')['default']
+    TopAppBar: typeof import('./components/TopAppBar.vue')['default']
   }
 }
